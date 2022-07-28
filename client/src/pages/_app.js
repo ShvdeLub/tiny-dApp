@@ -2,9 +2,10 @@ import '../styles/globals.css'
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import { parseEther, formatEther } from '@ethersproject/units';
-import Auction from './contracts/Auction.json';
 
-const AuctionContractAddress = “CONTRACT ADDRESS HERE”;
+
+const Auction = require("../contracts/Auction.json");
+const AuctionContractAddress = '0xf0468fbc2E636C7F3089ffD2Db44B36a4d5f2b18';
 const emptyAddress = '0x0000000000000000000000000000000000000000';
 
 function App() {
